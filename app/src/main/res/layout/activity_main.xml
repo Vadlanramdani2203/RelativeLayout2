@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/vadlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vadlan Ramdani"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vadlan"
+        android:layout_marginTop="30dp"
+        android:text="Nama"/>
+
+    <EditText
+        android:id="@+id/ET_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:text="Vadlan Ramdani"/>
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_nama"
+        android:layout_marginTop="10dp"
+        android:text="Alamat"/>
+
+    <EditText
+        android:id="@+id/ET_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alamat"
+        android:text="Jl. Babakan Jati 2"/>
+
+    <TextView
+        android:id="@+id/kampus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_alamat"
+        android:layout_marginTop="10dp"
+        android:text="Kampus"/>
+
+    <EditText
+        android:id="@+id/ET_kampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kampus"
+        android:text="SMKN 4 Bandung"/>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/ET_kampus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/vadlan"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/ET_kampus"
+        android:layout_toLeftOf="@id/img1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/vadlan"/>
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/ET_kampus"
+        android:layout_toRightOf="@id/img1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/vadlan"/>
+
+    <Button
+        android:id="@+id/btnkemnbali"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginTop="20dp"
+        android:text="Kembali"/>
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_toRightOf="@id/btnkemnbali"
+        android:layout_marginTop="20dp"
+        android:text="Next"/>
+
+</RelativeLayout>
